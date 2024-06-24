@@ -1,0 +1,63 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    font-family: netflix;
+    color: #fff;
+    background-color: #4c43ef;
+    padding: 10px;
+}
+
+.page-top{
+  text-align: center;
+  font-family: netflix;
+  color: #fff;
+}
+
+.message{
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #0e0e0e;
+}
+
+.infos{
+    color: #fff;
+    font-family: netflix;
+}
+
+p{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.films-btn-ex{
+  text-align: left;
+}
+
+@media screen and (max-width : 768px){
+  img{
+    width: 200px;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  .buttons{
+    --s: 200px;
+    border-radius: 15px;
+  }
+  .btn{
+    margin: 5px;
+  }
+}

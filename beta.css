@@ -1,0 +1,101 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    font-family: netflix;
+    color: #fff;
+    background-color: #4c43ef;
+    padding: 10px;
+}
+
+.page-top{
+  text-align: center;
+  font-family: netflix;
+  color: #fff;
+}
+
+.message{
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #0e0e0e;
+}
+
+.infos{
+    color: #fff;
+    font-family: netflix;
+}
+
+p{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-info{
+  color: #fff;
+}
+
+#welcome-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom right, #430000, #030034);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#welcome-message.show {
+  opacity: 1;
+  display: inherit;
+}
+
+#welcome-message.hidden {
+  opacity: 0;
+  display: none;
+}
+
+#welcome-message img {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#welcome-message h1 {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 10px;
+  font-family: Arial;
+}
+
+@media screen and (max-width : 768px){
+  img{
+    width: 200px;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  .buttons{
+    --s: 200px;
+    border-radius: 15px;
+  }
+  .btn{
+    margin: 5px;
+  }
+}

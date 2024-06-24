@@ -1,0 +1,114 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+* {
+    text-decoration: none;
+}
+
+body{  
+    background: #1e1e1e;
+}
+
+#weekly{
+    font-weight: bold;
+    font-size: 4em;
+    font-family: netflix;
+    color: red;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    font-family: netflix;
+    font-size: 120px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: netflix;
+}
+
+a{
+    text-align: center;
+    color: white;
+    font-family: netflix;
+    font-size: 50px;
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    font-family: netflix;
+    background-color: red;
+    border-radius: 30px;
+    font-size: 50px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.buttons-fs{
+    text-align: center;
+}
+
+#welcome-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom right, #430000, #030034);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#welcome-message.show {
+  opacity: 1;
+  display: inherit;
+}
+
+#welcome-message.hidden {
+  opacity: 0;
+  display: none;
+}
+
+#welcome-message img {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#welcome-message h1 {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 10px;
+  font-family: Arial;
+}
+
+.message{
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #0e0e0e;
+}
+
+.infos{
+    color: #fff;
+    font-family: netflix;
+}
+
+.text-info{
+    color: #fff;
+    font-size: 2em;
+}
+
+p{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}

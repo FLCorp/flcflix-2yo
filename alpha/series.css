@@ -1,0 +1,98 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    font-family: netflix;
+    color: #fff;
+}
+
+.message{
+    padding: 2px;
+    border-radius: 20px;
+    background-color: #0e0e0e;
+}
+
+.infos{
+    color: #fff;
+    font-family: netflix;
+}
+
+p{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arcane{
+  background-color: goldenrod;
+}
+
+.bobafett{
+  background-color: grey;
+}
+
+.breakingbad{
+  background-color: gold;
+}
+
+.halo{
+  background-color: green;
+}
+
+.flambeau{
+  background-color: goldenrod;
+}
+
+.lol{
+  background-color: blue;
+}
+.lol-a{
+  color: #fff;
+}
+
+.ricketmorty{
+  background-color: lightgreen;
+}
+
+.squidgame{
+  background-color: pink;
+}
+
+.strangerthings{
+  background-color: black;
+}
+
+.strangerthings-a{
+  color: red;
+}
+
+.mandalorian{
+  background-color: orange;
+}
+
+@media screen and (max-width : 768px){
+  img{
+    width: 200px;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  .buttons{
+    --s: 200px;
+    border-radius: 15px;
+  }
+  .btn{
+    margin: 5px;
+  }
+}

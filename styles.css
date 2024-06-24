@@ -1,0 +1,129 @@
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body {
+    /* Dark mode colors and gradient */
+    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+      135deg,
+      #121212 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      #121212 50%,
+      #121212 75%,
+      #1a1a1a 75%,
+      #1a1a1a
+    );
+    background-size: 40px 40px;
+  
+    /* Animation */
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: #fff;
+    font-family: netflix;
+}
+
+.buttons{
+    --s: 150px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+  
+.btn {
+  font-family: netflix;
+  font-size: 1em;
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #555;
+}
+
+.container{
+  text-align: center;
+}
+
+.btn2 {
+    text-align: center;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #1000be;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    font-family: netflix;
+    font-size: 1.5em;
+}
+  
+.btn2:hover {
+    border-color: #fff;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0003be;
+    font-family: netflix;
+    font-size: 2em;
+}
+
+@media screen and (max-width : 768px){
+  img{
+    width: 200px;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  .buttons{
+    --s: 200px;
+    border-radius: 15px;
+  }
+  .btn{
+    margin: 5px;
+  }
+}
